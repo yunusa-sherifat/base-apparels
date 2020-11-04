@@ -31,16 +31,20 @@
             <h1><span class="span">We're</span><br> coming <br>soon</h1>
             <h3> Hello fellow shoppers! We're currently building our new fashion store. 
            Add your email below to stay up-to-date with announcements and our launch deals.</h3>
-           <div class="form">
+           <div id="form" class="form">
             <input type="email" name="email" id="email" placeholder="Email Address">
-            <button><img class="arrow" src="./images/icon-arrow.svg" alt=""></button>
+            <button id="btn"><img class="arrow" src="./images/icon-arrow.svg" alt=""></button>
+            <div id="err-icon" class="error-icon">
+              <img src="./images/icon-error.svg" alt="">
+            </div>
+            <div id="err-txt" class="error-text"> <p>Please provide a valid email</p> </div>
            </div>
+         
           </div>
-        
-        
         </div>
       </div>
     </div>
  </div>
+ <script src="app.js"></script>
 </body>
 </html>
