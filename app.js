@@ -1,18 +1,18 @@
-const UserEmail = document.getElementById( 'form' )
-const BtnIcon = document.getElementById('btn');
-const ErrorIcon = document.getElementById('err-icon');
-const ErrorText = document.getElementById('err-txt');
+const UserEmail = document.getElementById('email');
+const btnIcon = document.getElementById('btn');
+const errorIcon = document.getElementById('err-icon');
+const errorText = document.getElementById('err-txt');
 
-BtnIcon.addEventListener('click', validateEmail)
+btnIcon.addEventListener('click', validateEmail)
 function validateEmail() {
   let input = userEmail.value;
   const reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let regResponse = reg.test(input);
   if(!regResponse) {
-    ErrorIcon.style.display = 'block';
-    ErrorText.style.display = 'block';
+    errorIcon.style.display = 'block';
+    errorText.style.display = 'block';
   } else {
-    ErrorIcon.style.display = 'none';
-    ErrorText.style.display = 'none';
+    errorIcon.style.display = 'none';
+    errorText.style.display = 'none';
   }
 }
