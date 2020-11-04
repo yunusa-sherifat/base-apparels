@@ -81,7 +81,6 @@ h3 {
 }
 
 p {
-  display: none;
   color: hsl(0, 36%, 70%);
   font-weight: 500;
   margin-left: 30px;
@@ -108,6 +107,10 @@ input::placeholder {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+input:focus {
+  outline: none;
+}
+
 button{
   padding: 15px 40px;
   border-radius: 25px;
@@ -128,6 +131,10 @@ button{
   position: absolute;
   right: 95px;
   top: 15px;
+}
+
+.error-text {
+  display: none;
 }
 
 
@@ -184,6 +191,10 @@ button{
   button {
     padding: 13px 25px;
     margin-left: 220px;
+  }
+
+  .error-text {
+    display: none;
   }
 
 }
