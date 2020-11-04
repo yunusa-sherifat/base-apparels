@@ -1,4 +1,4 @@
-const UserEmail = document.getElementById('email');
+const userEmail = document.getElementById('email');
 const btnIcon = document.getElementById('btn');
 const errorIcon = document.getElementById('err-icon');
 const errorText = document.getElementById('err-txt');
